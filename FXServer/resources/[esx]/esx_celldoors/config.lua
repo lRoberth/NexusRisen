@@ -216,15 +216,15 @@ Config.DoorList = {
 	-- Addons
 	--
 
-	--[[
+
 	-- Entrance Gate (Mission Row mod) https://www.gta5-mods.com/maps/mission-row-pd-ymap-fivem-v1
 	{
 		objName = 'prop_gate_airport_01',
-		objCoords  = {x = 420.133, y = -1017.301, z = 28.086},
-		textCoords = {x = 420.133, y = -1021.00, z = 32.00},
+		objCoords  = {x = 412.7, y = -1026.55, z = 29.39},
+		textCoords = {x = 412.66, y = -1021.00, z = 32.00},
 		locked = true,
 		distance = 14,
 		size = 2
-	}
-	--]]
+	},
+
 }

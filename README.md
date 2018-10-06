@@ -132,8 +132,6 @@ start route13_barriers
 
 # Vehicle Resources
 ```
-start sahp
-start sahp_1
 start police_heli
 start gruppe
 start civ_veh

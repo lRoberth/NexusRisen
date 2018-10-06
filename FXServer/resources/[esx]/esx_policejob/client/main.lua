@@ -484,7 +484,6 @@ function OpenPoliceActionsMenu()
 	)
 end
 
-				
 		if data.current.value == 'citizen_interaction' then
 			local elements = {
 				{label = _U('id_card'),			value = 'identity_card'},
@@ -537,6 +536,8 @@ end
 						TriggerEvent('esx_criminalrecords:open')
 					elseif action == 'jail_menu' then
 						openJailMenu(GetPlayerServerId(closestPlayer))
+					end
+
 					end
 
 				else
@@ -641,8 +642,7 @@ end
 			elseif data.current.value == 'vlivery' then
 				TriggerEvent('vlivery')
 				ESX.UI.Menu.CloseAll()
-			
-			
+
 		elseif data.current.value == 'object_spawner' then
 			ESX.UI.Menu.Open(
 			'default', GetCurrentResourceName(), 'citizen_interaction',
@@ -1593,6 +1593,7 @@ Citizen.CreateThread(function()
 
 end)
 
+
 -- Display markers
 Citizen.CreateThread(function()
 	while true do
@@ -1979,7 +1980,6 @@ function StartHandcuffTimer()
 	end)
 end
 
-
 function openJailMenu(playerid)
   local elements = {
     {label = "Cell 1",     value = 'JailPoliceStation1'},
@@ -1992,7 +1992,7 @@ function openJailMenu(playerid)
 	'default', GetCurrentResourceName(), 'jail_menu',
 	{
 	  title    = 'Jail the player',
-	  align    = 'left',
+	  align    = 'top-left',
 	  elements = elements,
 	},
 	function(data3, menu)
@@ -2042,4 +2042,3 @@ function ImpoundVehicle(vehicle)
 	ESX.ShowNotification(_U('impound_successful'))
 	CurrentTask.Busy = false
 end
-

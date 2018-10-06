@@ -538,8 +538,6 @@ end
 						openJailMenu(GetPlayerServerId(closestPlayer))
 					end
 
-					end
-
 				else
 					ESX.ShowNotification(_U('no_players_nearby'))
 				end

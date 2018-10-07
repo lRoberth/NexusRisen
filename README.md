@@ -145,6 +145,7 @@ start arrestanims
 start shield
 start WeazelNewsCam
 start els
+start disabledispatch
 start tab
 ```
 

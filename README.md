@@ -125,7 +125,6 @@ start esx_families
 ```
 # Map Resources
 ```
-start police_dept
 start weigh_stations
 start route13_barriers
 ```

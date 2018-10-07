@@ -1,10 +1,10 @@
 Locales['en'] = {
   -- Cloakroom
-  ['cloakroom'] = 'locker room',
-  ['citizen_wear'] = 'civilian Outfit',
-  ['police_wear'] = 'police Outfit',
-  ['gilet_wear'] = 'orange reflective jacket',
-  ['bullet_wear'] = 'bulletproof vest',
+  ['cloakroom'] = 'Locker Room',
+  ['citizen_wear'] = 'Civilian Outfit',
+  ['SASP_wear'] = 'Police Outfit',
+  ['gilet_wear'] = 'Orange Reflective Jacket',
+  ['bullet_wear'] = 'Bulletproof Vest',
   ['no_outfit'] = 'there\'s no uniform that fits you!',
   ['open_cloackroom'] = 'press ~INPUT_CONTEXT~ to change ~y~clothes~s~.',
   -- Armory

@@ -10,6 +10,6 @@ Config.DisableWantedLevel       = true
 Config.EnableWeaponPickup       = true
 Config.EnableHud                = true -- enable the default hud? Display current job and accounts (black, bank & cash)
 Config.RemoveInventoryItemDelay = 5 * 60000
-Config.PaycheckInterval         = 48 * 60000
+Config.PaycheckInterval         = 10 * 60000
 Config.MaxPlayers               = 32
 Config.EnableDebug              = false

@@ -40,4 +40,8 @@ Citizen.CreateThread(function()
 			break;
 		end
 	end
+<<<<<<< HEAD
 end)
+=======
+end)
+>>>>>>> 1b2e771cbbd803f88f86f2e69a99058b8d25bbd0

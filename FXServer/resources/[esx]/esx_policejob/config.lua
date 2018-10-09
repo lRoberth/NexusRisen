@@ -5,10 +5,10 @@ Config.MarkerType                 = 1
 Config.MarkerSize                 = { x = 1.5, y = 1.5, z = 1.0 }
 Config.MarkerColor                = { r = 50, g = 50, b = 204 }
 
-Config.EnablePlayerManagement     = true
+Config.EnablePlayerManagement     = false
 Config.EnableArmoryManagement     = false
 Config.EnableESXIdentity          = true -- enable if you're using esx_identity
-Config.EnableNonFreemodePeds      = true -- turn this on if you want custom peds
+Config.EnableNonFreemodePeds      = false -- turn this on if you want custom peds
 Config.EnableSocietyOwnedVehicles = false
 Config.EnableLicenses             = true -- enable if you're using esx_license
 
@@ -39,12 +39,11 @@ Config.PoliceStations = {
 			{ name = 'WEAPON_ASSAULTSMG',       price = 1250 },
 			{ name = 'WEAPON_ASSAULTRIFLE',     price = 1500 },
 			{ name = 'WEAPON_PUMPSHOTGUN',      price = 600 },
+			{ name = 'WEAPON_SAWNOFFSHOTGUN',      price = 600 },
 			{ name = 'WEAPON_STUNGUN',          price = 500 },
 			{ name = 'WEAPON_FLASHLIGHT',       price = 80 },
 			{ name = 'WEAPON_FIREEXTINGUISHER', price = 120 },
 			{ name = 'WEAPON_FLAREGUN',         price = 60 },
-			{ name = 'WEAPON_STICKYBOMB',       price = 250 },
-			{ name = 'GADGET_PARACHUTE',        price = 300 },
 		},
 
 		Cloakrooms = {
@@ -95,75 +94,41 @@ Config.PoliceStations = {
 Config.AuthorizedVehicles = {
 	Shared = {
 		{
-			model = 'hwaycar',
-			label = 'Highway State Police'
+			model = 'police5',
+			label = 'San Andreas State Cruiser'
 		},
 		{
-			model = 'hwaycar2',
-			label = 'Highway State Police'
+			model = 'police6',
+			label = 'San Andreas State Cruiser'
 		},
 		{
-			model = 'hwaycar3',
-			label = 'Highway State Police'
+			model = 'police7',
+			label = 'San Andreas State Cruiser'
 		},
 		{
-			model = 'hwaycar4',
-			label = 'Highway State Police'
+			model = 'police8',
+			label = 'San Andreas State Cruiser'
 		},
 		{
-			model = 'hwaycar5',
-			label = 'Highway State Police'
+			model = 'police9',
+			label = 'San Andreas State Cruiser'
 		},
 		{
-			model = 'hwaycar6',
-			label = 'Highway State Police'
-		},
-		{
-			model = 'hwaycar6',
-			label = 'Highway State Police'
-		},
-		{
-			model = 'hwaycar7',
-			label = 'Highway State Police'	
-		},
-		{
-			model = 'hwaycar8',
-			label = 'Highway State Police'
-		},
-		{
-			model = 'hwaycar9',
-			label = 'Highway State Police'
-		},
-		{
-			model = 'hwaycar10',
-			label = 'Highway State Police'
+			model = 'police10',
+			label = 'San Andreas State Cruiser'
 		}
-	},	
+	},
 
 	recruit = {
 
 	},
 
 	officer = {
-		{
-			model = 'state_crownvic',
-			label = 'State Crown Victoria'
-		}
+		
 	},
 
 	sergeant = {
-		{
-			model = 'state_crownvic',
-			label = 'State Crown Victoria'
-		},
-		{
-			model = 'state_bike',
-			label = 'State BMW Bike'
-		},
-		{
-			model = 'state_charger',
-			label = 'State Dodge Charger'
-		}
+		
 	},
 
 	intendent = {
@@ -171,48 +136,25 @@ Config.AuthorizedVehicles = {
 	},
 
 	lieutenant = {
-		{
-			model = 'state_crownvic',
-			label = 'State Crown Victoria'
-		},
-		{
-			model = 'state_bike',
-			label = 'State BMW Bike'
-		},
-		{
-			model = 'state_charger',
-			label = 'State Dodge Charger'
-		}
+		
 	},
 
 	chef = {
-		{
-			model = 'state_crownvic',
-			label = 'State Crown Victoria'
-		},
-		{
-			model = 'state_bike',
-			label = 'State BMW Bike'
-		},
-		{
-			model = 'state_charger',
-			label = 'State Dodge Charger'
-		}
 
 	},
 
 	boss = {
 		{
-			model = 'state_crownvic',
-			label = 'State Crown Victoria'
+			model = 'state_charger',
+			label = 'San Andreas State Cruiser'
 		},
 		{
 			model = 'state_bike',
-			label = 'State BMW Bike'
+			label = 'San Andreas State Cruiser'
 		},
 		{
-			model = 'state_charger',
-			label = 'State Dodge Charger'
+			model = 'state_crownvic',
+			label = 'San Andreas State Cruiser'
 		}
 	}
 }

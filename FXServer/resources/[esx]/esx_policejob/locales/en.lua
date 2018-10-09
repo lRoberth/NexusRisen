@@ -128,19 +128,10 @@ Locales['en'] = {
   -- Notifications
   ['alert_police'] = 'police alert',
   ['phone_police'] = 'police',
-  
-  -- Jail
-  ['jail_menu'] = 'Jail',
-  
-  -- Criminal Record
-  ['Criminalrecord'] = 'Criminal Record',
-  
   -- EUP
-  ['eupmenu'] = 'EUP Menu',
-  
+  ['eupmenu'] = 'EUP Menu', 
   -- Vehicle Menu
   ['Vehicle_Extra'] = 'Police Vehicle Menu',
   ['vlivery'] = 'Vehicle Livery Menu',
   ['vextra'] = 'Vehicle Extra Menu',
-  
 }

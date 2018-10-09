@@ -10,11 +10,6 @@ AddEventHandler('esx_celldoors:updateState', function(doorID, state)
 		print('esx_celldoors: ' .. xPlayer.identifier .. ' attempted to open a locked door using an injector!')
 		return
 	end
-	
-	if xPlayer.job.name ~= 'SASP' then
-		print('esx_celldoors: ' .. xPlayer.identifier .. ' attempted to open a locked door using an injector!')
-		return
-	end
 
 	-- make each door a table, and clean it when toggled
 	DoorInfo[doorID] = {}

@@ -1,5 +1,5 @@
 Config                            = {}
-Config.Locale = 'en' -- your language, It would be nice if you send me your translation on fivem forum
+Config.Locale = 'en'
 Config.TimeToSell = 10 -- how many seconds player have to wait/stand near ped
 Config.CallCops = true -- if true and if ped reject your offer then there is 40% chance that ped will call cops
 Config.CopsRequiredToSell = 1 -- required cops on server to sell drugs

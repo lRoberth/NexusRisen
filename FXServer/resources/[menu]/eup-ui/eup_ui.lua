@@ -3658,6 +3658,10 @@ RegisterCommand('kdjfhsuwnsjfhsnwuenakeuq', function()
     mainMenu:Visible(not mainMenu:Visible())
 end, true)
 
+AddEventHandler("eupmenu", function()
+    mainMenu:Visible(not mainMenu:Visible())
+end)
+
 CreateThread(function()
     while true do
         Wait(0)
@@ -3666,13 +3670,3 @@ CreateThread(function()
     end
 end)
 
-AddEventHandler("eupmenu", function()
-    mainMenu:Visible(not mainMenu:Visible())
-end)
-
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-        _menuPool:ProcessMenus()
-    end
-end)

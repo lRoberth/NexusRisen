@@ -394,11 +394,11 @@ Citizen.CreateThread(function()
 						
 						DisableControlAction(0, 86, true) -- INPUT_VEH_HORN	
 						DisableControlAction(0, 172, true) -- INPUT_CELLPHONE_UP 
-						--DisableControlAction(0, 173, true) -- INPUT_CELLPHONE_DOWN
-						--DisableControlAction(0, 174, true) -- INPUT_CELLPHONE_LEFT 
-						--DisableControlAction(0, 175, true) -- INPUT_CELLPHONE_RIGHT 
-						DisableControlAction(0, 81, true) -- INPUT_VEH_NEXT_RADIO
-						DisableControlAction(0, 82, true) -- INPUT_VEH_PREV_RADIO
+						DisableControlAction(0, 173, false) -- INPUT_CELLPHONE_DOWN
+						DisableControlAction(0, 174, true) -- INPUT_CELLPHONE_LEFT 
+						DisableControlAction(0, 175, true) -- INPUT_CELLPHONE_RIGHT 
+						DisableControlAction(0, 81, false) -- INPUT_VEH_NEXT_RADIO
+						DisableControlAction(0, 82, false) -- INPUT_VEH_PREV_RADIO
 						DisableControlAction(0, 19, true) -- INPUT_CHARACTER_WHEEL 
 						DisableControlAction(0, 85, true) -- INPUT_VEH_RADIO_WHEEL 
 						DisableControlAction(0, 80, true) -- INPUT_VEH_CIN_CAM 
@@ -620,9 +620,9 @@ Citizen.CreateThread(function()
 								TriggerServerEvent("lvc_SetAirManuState_s", state_airmanu[veh])
 							end
 							--- IS ANY OTHER VEHICLE ---
-							TriggerServerEvent("lvc_TogIndicState_s", state_indic[veh])
-						else
-							count_bcast_timer = count_bcast_timer + 1
+						TriggerServerEvent("lvc_TogIndicState_s", state_indic[veh])
+							else
+								count_bcast_timer = count_bcast_timer + 1
 						end
 					
 					end

@@ -6,7 +6,7 @@ Config.EnablePvCommand            = true
 Config.EnableOwnedVehicles        = true
 Config.EnableSocietyOwnedVehicles = false -- use with EnablePlayerManagement disabled, or else it wont have any effects
 Config.ResellPercentage           = 50
-Config.Locale                     = 'en'
+Config.Locale = 'en'
 
 -- looks like this: 'LLL NNN'
 -- The maximum plate length is 8 chars (including spaces & symbols), don't go past it!

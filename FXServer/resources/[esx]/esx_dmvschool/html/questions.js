@@ -1,37 +1,37 @@
 var tableauQuestion = [
 	{
-		question: "Si vous conduisez à 80km/h, que vous approchez d'un lieu de résidence, cela veut dire que :",
-		propositionA: "Vous devez accélérer",
-		propositionB: "Vous pouvez garder votre vitesse, si vous ne croisez pas d'autres véhicules",
-		propositionC: "Vous devez ralentir",
-		propositionD: "Vous pouvez garder votre vitesse",
-		reponse: "C"
-	},
-
-	{
-		question: "Vous vous apprétez à tourner à droite au feu vert, mais vous voyez un piéton qui traverse :",
-		propositionA: "Vous passez avant le piéton",
-		propositionB: "Vous vérifiez qu'il n'y a pas d'autre véhicule et vous passez",
-		propositionC: "Vous attendez que le piéton est terminé",
-		propositionD: "Vous shoutez le piéton pour passer",
-		reponse: "C"
-	},
-
-	{
-		question: "Sans aucune indication : La vitesse dans une zone résidentielle est de : __ km/h",
-		propositionA: "50",
-		propositionB: "55",
-		propositionC: "65",
-		propositionD: "70",
+		question: "Flash your brake lights or turn on your emergency flashers if you:",
+		propositionA: "Need to warn other drivers of a collision ahead.",
+		propositionB: "Are temporarily parked in a traffic lane to make delivery.",
+		propositionC: "Are backing out of a parking space.",
+		propositionD: "All of the above.",
 		reponse: "A"
 	},
 
 	{
-		question: "Avant chaque changement de file vous devez :",
-		propositionA: "Vérifiez vos rétroviseurs",
-		propositionB: "Vérifiez vos angles morts",
-		propositionC: "Signalez vos intentions",
-		propositionD: "Tout cela",
+		question: "When planning to pass another vehicle, you should:",
+		propositionA: "Not count on other drivers to make room for you.",
+		propositionB: "Assume the driver will let you pass if you use your turn signal.",
+		propositionC: "Assume the driver will maintain a constant speed.",
+		propositionD: "All of the above.",
+		reponse: "A"
+	},
+
+	{
+		question: "A solid yellow line next to a broken yellow line means that vehicles:",
+		propositionA: "Driving in both directions may pass.",
+		propositionB: "Next to the broken line may pass.",
+		propositionC: "Next to the solid line may pass.",
+		propositionD: "All of the above.",
+		reponse: "B"
+	},
+
+	{
+		question: "Before every lane change you must:",
+		propositionA: "Check your mirrors.",
+		propositionB: "Check your blind spots.",
+		propositionC: "Signal your intentions.",
+		propositionD: "All of the above.",
 		reponse: "D"
 	},
 
@@ -45,47 +45,47 @@ var tableauQuestion = [
 	},
 
 	{
-		question: "A quel moment vous pouvez passer aux feux ?",
-		propositionA: "Quand il est vert",
-		propositionB: "Quand il n'y a personne sur l'intersection",
-		propositionC: "Vous êtes dans une zone d'école",
-		propositionD: "Quand il est vert et/ou rouge et que je tourne à droite",
-		reponse: "D"
+		question: "Animals may be transported in the back of a pickup truck only if:",
+		propositionA: "The sides of the truck bed are at least 18 inches high.",
+		propositionB: "They are properly secured.",
+		propositionC: "The tailgate of the truck is closed.",
+		propositionD: "All of the above.",
+		reponse: "B"
 	},
 
 	{
-		question: "Un piéton est au feu rouge pour les piétons",
-		propositionA: "Vous le laissez passer",
-		propositionB: "Vous observez avant de continuer",
-		propositionC: "Vous lui faite un signe de la main",
-		propositionD: "Vous continuez votre chemin car votre feu est vert",
-		reponse: "D"
+		question: "In which of the following scenarios should your wheels not be pointed straight ahead?",
+		propositionA: "When waiting to make a left turn at a traffic light.",
+		propositionB: "When parked on a hill or sloping driveway.",
+		propositionC: "When parked on the side of a level roadway where there is no curb.",
+		propositionD: "All of the above.",
+		reponse: "B"
 	},
 
 	{
-		question: "Qu'est ce qui est permit quand vous dépassez un autre véhicule",
-		propositionA: "Le suivre de près pour le doubler plus vite",
-		propositionB: "Le doubler en quittant la route",
-		propositionC: "Conduire sur la route opposé pour le dépasser",
-		propositionD: "Dépasser la vitesse limite",
+		question: "Allow extra space in front of your vehicle when following a:",
+		propositionA: "Station wagon.",
+		propositionB: "Passenger vehicle.",
+		propositionC: "Motorcycle.",
+		propositionD: "All of the above.",
 		reponse: "C"
 	},
 
 	{
-		question: "Vous conduisez sur une rocade qui indique une vitesse maximum de 110 km/h. La plupart du traffic roule à 120 km/h, alors vous ne devriez pas conduire plus vite que :",
-		propositionA: "80 kmh",
-		propositionB: "40 kmh",
-		propositionC: "50 kmh",
-		propositionD: "110 kmh",
-		reponse: "D"
+		question: "If a road is slippery, maintain a following distance that is:",
+		propositionA: "No different than normal.",
+		propositionB: "Farther from the car ahead than normal.",
+		propositionC: "Closer to the car ahead than normal.",
+		propositionD: "All of the above.",
+		reponse: "B"
 	},
 
 	{
-		question: "Quand vous êtes dépassé par un autre véhicule il est important de ne PAS :",
-		propositionA: "Ralentir",
-		propositionB: "Vérifiez vos rétroviseurs",
-		propositionC: "Regarder les autres conducteurs",
-		propositionD: "Augmenter votre vitesse",
-		reponse: "D"
+		question: "Check your rearview mirrors:",
+		propositionA: "Often to see how traffic is moving behind you.",
+		propositionB: "To see if a vehicle is in your blind spot.",
+		propositionC: "Only when you are slowing down.",
+		propositionD: "All of the above.",
+		reponse: "A"
 	},
 ]

@@ -465,7 +465,7 @@ function OpenPoliceActionsMenu()
 		}
 	}, function(data, menu)
 	
-				if data.current.value == 'Vehicle_Extra' then
+	if data.current.value == 'Vehicle_Extra' then
                   local elements = {
 				{label = _U('vlivery'),	                value = 'vlivery'},
 				{label = _U('vextra'),	                value = 'vextra'}
@@ -493,9 +493,7 @@ end
 				{label = _U('put_in_vehicle'),	value = 'put_in_vehicle'},
 				{label = _U('out_the_vehicle'),	value = 'out_the_vehicle'},
 				{label = _U('fine'),			value = 'fine'},
-				{label = _U('unpaid_bills'),	value = 'unpaid_bills'},
-				{label = 'Criminalrecord',      value = 'criminalrecords'},
-				{label = _U('jail_menu'),		value = 'jail_menu'}
+				{label = _U('unpaid_bills'),	value = 'unpaid_bills'}
 			}
 		
 			if Config.EnableLicenses then
@@ -532,10 +530,6 @@ end
 						ShowPlayerLicense(closestPlayer)
 					elseif action == 'unpaid_bills' then
 						OpenUnpaidBillsMenu(closestPlayer)
-					elseif action == 'criminalrecords' then
-						TriggerEvent('esx_criminalrecords:open')
-					elseif action == 'jail_menu' then
-						openJailMenu(GetPlayerServerId(closestPlayer))
 					end
 
 				else
@@ -1591,7 +1585,6 @@ Citizen.CreateThread(function()
 
 end)
 
-
 -- Display markers
 Citizen.CreateThread(function()
 	while true do
@@ -1976,59 +1969,6 @@ function StartHandcuffTimer()
 		TriggerEvent('esx_policejob:unrestrain')
 		HandcuffTimer.Active = false
 	end)
-end
-
-function openJailMenu(playerid)
-  local elements = {
-    {label = "Cell 1",     value = 'JailPoliceStation1'},
-    {label = "Cell 2",     value = 'JailPoliceStation2'},
-    {label = "Cell 3",     value = 'JailPoliceStation3'},
-    {label = "Federal cell",     value = 'FederalJail'},
-    {label = "Unjail player",     value = 'FreePlayer'},
-  }
-  ESX.UI.Menu.Open(
-	'default', GetCurrentResourceName(), 'jail_menu',
-	{
-	  title    = 'Jail the player',
-	  align    = 'top-left',
-	  elements = elements,
-	},
-	function(data3, menu)
-		if data3.current.value ~= "FreePlayer" then
-			maxLength = 4
-			AddTextEntry('FMMC_KEY_TIP8', "Time spend in prison")
-			DisplayOnscreenKeyboard(1, "FMMC_KEY_TIP8", "", "", "", "", "", maxLength)
-			ESX.ShowNotification("~b~Type number of hours you want to set for player.")
-			blockinput = true
-
-			while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do
-				Citizen.Wait( 0 )
-			end
-
-			local jailtime = GetOnscreenKeyboardResult()
-
-			UnblockMenuInput()
-
-			if string.len(jailtime) >= 1 and tonumber(jailtime) ~= nil then
-				TriggerServerEvent('esx_jb_jailer:PutInJail', playerid, data3.current.value, tonumber(jailtime)*60*60)
-			else
-				return false
-			end
-		else
-			TriggerServerEvent('esx_jb_jailer:UnJailplayer', playerid)
-		end
-	end,
-	function(data3, menu)
-	  menu.close()
-	end
-  )
-end
-
-function UnblockMenuInput()
-    Citizen.CreateThread( function()
-        Citizen.Wait( 150 )
-        blockinput = false 
-    end )
 end
 
 -- TODO

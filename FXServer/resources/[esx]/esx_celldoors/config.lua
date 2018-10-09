@@ -12,7 +12,7 @@ Config.DoorList = {
 		objName = 'v_ilev_ph_door01',
 		objCoords  = {x = 434.747, y = -980.618, z = 30.839},
 		textCoords = {x = 434.747, y = -981.50, z = 31.50},
-		locked = false,
+		locked = true,
 		distance = 2.5
 	},
 
@@ -20,7 +20,7 @@ Config.DoorList = {
 		objName = 'v_ilev_ph_door002',
 		objCoords  = {x = 434.747, y = -983.215, z = 30.839},
 		textCoords = {x = 434.747, y = -982.50, z = 31.50},
-		locked = false,
+		locked = true,
 		distance = 2.5
 	},
 
@@ -165,7 +165,7 @@ Config.DoorList = {
 		objName = 'v_ilev_shrfdoor',
 		objCoords  = {x = 1855.105, y = 3683.516, z = 34.266},
 		textCoords = {x = 1855.105, y = 3683.516, z = 35.00},
-		locked = false
+		locked = true
 	},
 
 	--
@@ -177,7 +177,7 @@ Config.DoorList = {
 		objName = 'v_ilev_shrf2door',
 		objCoords  = {x = -443.14, y = 6015.685, z = 31.716},
 		textCoords = {x = -443.14, y = 6015.685, z = 32.00},
-		locked = false,
+		locked = true,
 		distance = 2.5
 	},
 
@@ -185,7 +185,7 @@ Config.DoorList = {
 		objName = 'v_ilev_shrf2door',
 		objCoords  = {x = -443.951, y = 6016.622, z = 31.716},
 		textCoords = {x = -443.951, y = 6016.622, z = 32.00},
-		locked = false,
+		locked = true,
 		distance = 2.5
 	},
 
@@ -212,6 +212,12 @@ Config.DoorList = {
 		size = 2
 	},
 
+	--
+	-- Addons
+	--
+
+
+	-- Entrance Gate (Mission Row mod) https://www.gta5-mods.com/maps/mission-row-pd-ymap-fivem-v1
 	{
 		objName = 'prop_gate_airport_01',
 		objCoords  = {x = 412.7, y = -1026.55, z = 29.39},

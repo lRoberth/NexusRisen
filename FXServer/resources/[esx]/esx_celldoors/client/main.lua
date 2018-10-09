@@ -25,9 +25,6 @@ Citizen.CreateThread(function()
 	if PlayerData.job.name == 'police' then
 		IsCop = true
 	end
-	if PlayerData.job.name == 'SASP' then
-		IsCop = true
-	end
 
 	-- Update the door list
 	ESX.TriggerServerCallback('esx_celldoors:getDoorInfo', function(doorInfo, doorCount)
@@ -44,7 +41,6 @@ AddEventHandler('esx:setJob', function(job)
 	PlayerData.job = job
 
 	IsCop = (job.name == 'police') or false
-	IsCop = (job.name == 'SASP') or false
 end)
 
 Citizen.CreateThread(function()
